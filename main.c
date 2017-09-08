@@ -15,7 +15,7 @@ int main(void)
   //set PA3 as input (for hall-effect sensor)
  // DDRA &= ~(1<<DDA3);
   while(1){
-	//  if (PINA & (PINA3 >> 1)) { //read hall sensor signal, if high
+	//  if (PINA & (1 << PINA3)) { //read hall sensor signal, if high
 	//	  PORTA |= (1 << PORTA1 ); //turn on one of the switch
 		//  PORTA &= ~(1 << PORTA2 ); //turn off the other switch
 		  //} else { //if hall sensor signal is low
